@@ -1,0 +1,26 @@
+<monitor>
+    <name>AWS StorageGateway Monitor</name>
+    <type>managed</type>
+    <description>AWS StorageGateway Monitoring Extension</description>
+    <monitor-configuration></monitor-configuration>
+    <monitor-run-task>
+        <execution-style>periodic</execution-style>
+        <execution-frequency-in-seconds>60</execution-frequency-in-seconds>
+        <name>AWS StorageGateway Monitor Run task</name>
+        <display-name>AWS StorageGateway Monitor Run task</display-name>
+        <description>AWS StorageGateway Monitor Run task</description>
+        <type>java</type>
+        <execution-timeout-in-secs>60</execution-timeout-in-secs>
+        
+		<task-arguments>
+			<argument name="config-file" is-required="true" default-value="monitors/AWSStorageGatewayMonitor/conf/config.yaml" />
+			<argument name="region-endpoints-config" is-required="true" default-value="monitors/AWSStorageGatewayMonitor/conf/region-endpoints.yaml" />
+		</task-arguments>
+            
+        <java-task>
+            <classpath>aws-storagegateway-monitoring-extension.jar</classpath>
+            <impl-class>com.appdynamics.extensions.aws.storagegateway.StorageGatewayMonitor</impl-class>
+        </java-task>
+        
+    </monitor-run-task>
+</monitor>
