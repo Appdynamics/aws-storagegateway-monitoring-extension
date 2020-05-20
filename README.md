@@ -179,13 +179,12 @@ To set an encrypted awsAccessKey and awsSecretKey in config.yml, follow the step
 
 3. Set the decryptionKey field in config.yml with the encryption key used, as well as the resulting encrypted awsAccessKey and awsSecretKey in their respective fields.
 
+Please visit [this page](https://community.appdynamics.com/t5/Knowledge-Base/How-to-use-Password-Encryption-with-Extensions/ta-p/29397) to get detailed instructions on password encryption. The steps in this document will guide you through the whole process.
+
 ## Metrics
 Typical metric path: **Application Infrastructure Performance|\<Tier\>|Custom Metrics|Amazon StorageGateway|\<Account Name\>|\<Region\>|Gateway Id|\<Gateway Id\>|Gateway Name|\<Gateway Name\>** followed by the metrics defined in the link below:
 
 - [StorageGateway Metrics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/awssg-metricscollected.html)
-
-## Credentials Encryption
-Please visit [this page](https://community.appdynamics.com/t5/Knowledge-Base/How-to-use-Password-Encryption-with-Extensions/ta-p/29397) to get detailed instructions on password encryption. The steps in this document will guide you through the whole process.
 
 ## Extensions Workbench
 
@@ -216,11 +215,13 @@ For any support related questions, you can also contact [help@appdynamics.com](m
 
 ## Contributing
 
-Always feel free to fork and contribute any changes directly here on [GitHub](https://github.com/Appdynamics/aws-kinesis-datastreams-monitoring-extension).
+Always feel free to fork and contribute any changes directly here on [GitHub](https://github.com/Appdynamics/aws-storagegateway-monitoring-extension).
 
 ## Version
-   |Name|Version|
+   |          Name            |  Version   |
    |--------------------------|------------|
-   |Extension Version         |2.0.0       |
+   |Extension Version         |2.0.0      |
    |Controller Compatibility  |4.4 or Later|
-   |Last Update               |May 19, 2020 |
+   |Agent Compatibility        | 4.5.13 or later|
+   |Last Update               |19 May, 2020 |
+List of changes to this extension can be found [here](https://github.com/Appdynamics/aws-storagegateway-monitoring-extension/blob/master/CHANGELOG.md)

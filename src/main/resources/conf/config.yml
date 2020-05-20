@@ -25,14 +25,12 @@ proxyConfig:
     username:
     password:
 
+# Find the available dimensions and metrics for the service here[https://docs.aws.amazon.com/storagegateway/latest/userguide/Main_monitoring-gateways-common.html].
 # Filters based on dimensions, values accepts comma separated values and regex patterns. If `.*` is used, all are
 # monitored and if empty, none are monitored.
 dimensions:
   - name: "GatewayId"
     displayName: "Gateway Id"
-    values: [".*"]
-  - name: "VolumeId"
-    displayName: "Volume Id"
     values: [".*"]
 
 # Global metrics config for all accounts
